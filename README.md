@@ -2,7 +2,7 @@
 
 ## 📋 Overview
 
-This PowerShell script helps you retrieve **patch compliance reports** from **Microsoft Intune** using Microsoft Graph API.  
+This PowerShell script helps you retrieve **patch compliance reports** from **Microsoft Intune**
 Unlike native Intune reports that often focus on just the latest patch (`n`), this script gives you compliance insights up to **n-10 patch levels** (i.e., previous 10 patch cycles).
 
 Ideal for IT admins who need detailed visibility into update compliance across multiple Intune-managed devices.
@@ -18,18 +18,6 @@ Ideal for IT admins who need detailed visibility into update compliance across m
   - Stuck or pending reboots
 - 📁 Export results to CSV or log file (optional)
 - 🛠 Supports automation and scheduling
-
----
-
-## ⚙️ Prerequisites
-
-- Azure AD App with appropriate **Graph API permissions**
-  - `DeviceManagementConfiguration.Read.All`
-  - `Device.Read.All`
-  - `Reports.Read.All`
-- PowerShell 5.1 or later
-- Microsoft.Graph PowerShell SDK or direct Graph API calls
-- Admin access to Intune or delegated permissions
 
 ---
 
